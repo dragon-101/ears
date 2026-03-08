@@ -12,22 +12,17 @@ jobs:
     steps:
       - name: Checkout your monitor repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download latest file from aamiaa
+      - name: Download latest file
         run: |
-          # Download the raw file directly
           curl -s -L "https://raw.githubusercontent.com" -o quests_new.json
 
       - name: Compare and Update
         id: compare
         run: |
-          # Check if your local quests.json exists
-          if [ ! -f "quests.json" ]; then
-            echo "First run: Creating quests.json"
-            mv quests_new.json quests.json
-            echo "changed=true" >> $GITHUB_OUTPUT
-          elif ! cmp -s "quests.json" "quests_new.json"; then
-            echo "Difference detected!"
+          if [ ! -f "quests.json" ] || ! diff -q -w "quests.json" "quests_new.json" > /dev/null; then
             mv quests_new.json quests.json
             echo "changed=true" >> $GITHUB_OUTPUT
           else
@@ -36,23 +31,20 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit Changes to your repo
+      - name: Commit and Push Changes
         if: steps.compare.outputs.changed == 'true'
         run: |
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add quests.json
-          git commit -m "Update quests.json from source [skip ci]"
-          git push
+          git commit -m "Sync quests.json [skip ci]" || echo "No changes to commit"
+          git push origin main
 
       - name: Notify Discord
         run: |
           if [ "${{ steps.compare.outputs.changed }}" == "true" ]; then
-            MESSAGE="🚀 **Update Detected!**\nThe \`quests.json\` file has changed. I have updated the file in your repository."
+            MSG="🚀 **Update Detected!** Quests file has been synced."
           else
-            MESSAGE="✅ **Check Complete**: No changes found in \`quests.json\`. Everything is up to date."
+            MSG="✅ **Check Complete**: No changes found."
           fi
-          
-          curl -H "Content-Type: application/json" \
-               -d "{\"content\": \"$MESSAGE\"}" \
-               ${{ secrets.DISCORD_WEBHOOK }}
+          curl -H "Content-Type: application/json" -d "{\"content\": \"$MSG\"}" ${{ secrets.DISCORD_WEBHOOK }}
