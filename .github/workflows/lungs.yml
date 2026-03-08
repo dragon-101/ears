@@ -1,0 +1,55 @@
+name: Monitor Discord API Diff
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour for free
+  workflow_dispatch: # Allows you to test it manually
+
+jobs:
+  check-file:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to save the "last seen" hash in your repo
+    steps:
+      - name: Checkout your monitor repo
+        uses: actions/checkout@v4
+
+      - name: Check for changes in aamiaa/discord-api-diff
+        id: check
+        run: |
+          REPO="aamiaa/discord-api-diff"
+          FILE="quests.json"
+          
+          # Fetch the latest commit hash for specifically that file
+          LATEST_HASH=$(curl -s "https://api.github.com" | jq -r '.[0].sha')
+          CACHE_FILE=".last_hash_quests"
+          
+          if [ -f "$CACHE_FILE" ]; then
+            OLD_HASH=$(cat "$CACHE_FILE")
+          else
+            OLD_HASH=""
+          fi
+
+          if [ "$LATEST_HASH" != "$OLD_HASH" ] && [ "$LATEST_HASH" != "null" ]; then
+            echo "$LATEST_HASH" > "$CACHE_FILE"
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "hash=$LATEST_HASH" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update Hash Cache in your repo
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add .last_hash_quests
+          git commit -m "Update tracked hash for quests.json [skip ci]"
+          git push
+
+      - name: Notify Discord
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          MESSAGE="🚀 **Update Detected!**\nFile: \`quests.json\` in \`aamiaa/discord-api-diff\` has changed.\nCommit: ${{ steps.check.outputs.hash }}\nView: https://github.com/aamiaa/discord-api-diff/blob/main/quests.json"
+          curl -H "Content-Type: application/json" \
+               -d "{\"content\": \"$MESSAGE\"}" \
+               ${{ secrets.DISCORD_WEBHOOK }}
