@@ -2,7 +2,7 @@ name: Monitor Discord Quests
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,61 +19,44 @@ jobs:
 
       - name: Download latest quests.json
         run: |
-          curl -s -L \
+          curl -s \
+            -H "Accept: application/octet-stream" \
+            -A "Mozilla/5.0 (compatible; GitHub Actions)" \
             "https://raw.githubusercontent.com/aamiaa/discord-api-diff/main/quests.json" \
             -o quests_new.json
 
+          echo "--- First 3 lines of downloaded file ---"
+          head -3 quests_new.json
+
           if ! python3 -c "import json; json.load(open('quests_new.json'))" 2>/dev/null; then
-            echo "Downloaded file is not valid JSON — aborting."
+            echo "ERROR: Downloaded file is not valid JSON. Aborting."
             cat quests_new.json
             exit 1
           fi
 
+          echo "Download OK — valid JSON."
+
       - name: Compare with saved version
         id: compare
         run: |
-          if [ ! -f "quests.json" ] || ! python3 -c "import json; json.load(open('quests.json'))" 2>/dev/null; then
-            echo "No valid saved version found — saving as baseline, no notification."
+          if [ ! -f "quests.json" ]; then
+            echo "No baseline found — saving current file as baseline."
             cp quests_new.json quests.json
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "changed=baseline" >> $GITHUB_OUTPUT
 
           elif ! diff -q quests.json quests_new.json > /dev/null 2>&1; then
+            echo "Change detected."
+            mv quests_new.json quests.json
             echo "changed=true" >> $GITHUB_OUTPUT
 
-            ADDED=$(python3 - <<'EOF'
-          import json
-
-          with open("quests.json") as f:
-              old = json.load(f)
-          with open("quests_new.json") as f:
-              new = json.load(f)
-
-          old_ids = {q.get("id") for q in old}
-          added = [q for q in new if q.get("id") not in old_ids]
-
-          for q in added:
-              label = q.get("config", {}).get("messages", {}).get("task_incomplete_message") \
-                      or q.get("label") \
-                      or q.get("id") \
-                      or "Unknown Quest"
-              print(f"**{label}**")
-          EOF
-            )
-
-            echo "ADDED_QUESTS<<EOF" >> $GITHUB_ENV
-            echo "$ADDED" >> $GITHUB_ENV
-            echo "EOF" >> $GITHUB_ENV
-
-            mv quests_new.json quests.json
-
           else
-            echo "No differences found."
+            echo "No changes."
             rm quests_new.json
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Commit and push updated quests.json
-        if: steps.compare.outputs.changed == 'true'
+        if: steps.compare.outputs.changed == 'true' || steps.compare.outputs.changed == 'baseline'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -83,14 +66,14 @@ jobs:
 
       - name: Send Discord notification
         run: |
-          if [ "${{ steps.compare.outputs.changed }}" == "true" ]; then
-            if [ -n "$ADDED_QUESTS" ]; then
-              MSG="🚨 **__QUEST UPDATE DETECTED!__** 🚨\n\n**New quest(s) have appeared:**\n$ADDED_QUESTS\n\n> Check Discord for the latest quests!"
-            else
-              MSG="✏️ **__Quests File Modified__**\n\nThe quests file has changed but no new quests were added — existing quests may have been **edited or removed**."
-            fi
+          STATUS="${{ steps.compare.outputs.changed }}"
+
+          if [ "$STATUS" == "true" ]; then
+            MSG="🚨 **__QUEST UPDATE DETECTED!__** 🚨\n\nThe **quests.json** file has changed on the Discord API diff repo.\n\n> <https://github.com/aamiaa/discord-api-diff/blob/main/quests.json>"
+          elif [ "$STATUS" == "baseline" ]; then
+            MSG="📦 **Baseline saved** — no prior version existed. Monitoring started."
           else
-            MSG="🔍 **Routine Check Complete** — No changes found in quests.json."
+            MSG="🔍 **Routine check complete** — no changes found in quests.json."
           fi
 
           curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
