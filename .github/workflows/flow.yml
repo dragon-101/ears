@@ -23,7 +23,6 @@ jobs:
             "https://raw.githubusercontent.com/aamiaa/discord-api-diff/main/quests.json" \
             -o quests_new.json
 
-          # Validate the downloaded file is actually valid JSON
           if ! python3 -c "import json; json.load(open('quests_new.json'))" 2>/dev/null; then
             echo "Downloaded file is not valid JSON — aborting."
             cat quests_new.json
@@ -33,7 +32,6 @@ jobs:
       - name: Compare with saved version
         id: compare
         run: |
-          # If no saved version exists, or saved version is invalid, treat as first run
           if [ ! -f "quests.json" ] || ! python3 -c "import json; json.load(open('quests.json'))" 2>/dev/null; then
             echo "No valid saved version found — saving as baseline, no notification."
             cp quests_new.json quests.json
@@ -43,7 +41,7 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
 
             ADDED=$(python3 - <<'EOF'
-          import json, sys
+          import json
 
           with open("quests.json") as f:
               old = json.load(f)
@@ -84,23 +82,14 @@ jobs:
           git push origin main
 
       - name: Send Discord notification
+        if: steps.compare.outputs.changed == 'true'
         run: |
-          if [ "${{ steps.compare.outputs.changed }}" == "true" ]; then
-            if [ -n "$ADDED_QUESTS" ]; then
-              MSG="🆕 **New Discord Quest(s) Detected!**\n\n$ADDED_QUESTS"
-            else
-              MSG="✏️ **Quests file updated** — existing quests may have been modified."
-            fi
+          if [ -n "$ADDED_QUESTS" ]; then
+            MSG="🆕 **New Discord Quest(s) Detected!**\n\n$ADDED_QUESTS"
           else
-            MSG="✅ **No changes** in quests.json."
+            MSG="✏️ **Quests file updated** — existing quests may have been modified."
           fi
 
-          python3 -c "
-          import json, urllib.request, os
-
-          msg = os.environ.get('MSG', 'Check complete.')
-          webhook = '${{ secrets.DISCORD_WEBHOOK }}'
-          payload = json.dumps({'content': msg}).encode()
-          req = urllib.request.Request(webhook, data=payload, headers={'Content-Type': 'application/json'})
-          urllib.request.urlopen(req)
-          "
+          curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"content\": \"$MSG\"}"
