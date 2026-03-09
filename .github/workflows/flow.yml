@@ -1,4 +1,5 @@
-name: blehh
+name: Monitor Discord Quests
+
 on:
   schedule:
     - cron: '0 * * * *'
@@ -9,42 +10,88 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Checkout your monitor repo
+      - name: Checkout monitor repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download latest file
+      - name: Download latest quests.json
         run: |
-          curl -s -L "https://raw.githubusercontent.com" -o quests_new.json
+          curl -s -L \
+            "https://raw.githubusercontent.com/aamiaa/discord-api-diff/main/quests.json" \
+            -o quests_new.json
 
-      - name: Compare and Update
+      - name: Compare with saved version
         id: compare
         run: |
-          if [ ! -f "quests.json" ] || ! diff -q -w "quests.json" "quests_new.json" > /dev/null; then
-            mv quests_new.json quests.json
+          if [ ! -f "quests.json" ]; then
+            echo "No saved version found — treating as first run."
+            cp quests_new.json quests.json
+            echo "changed=false" >> $GITHUB_OUTPUT
+          elif ! diff -q quests.json quests_new.json > /dev/null 2>&1; then
             echo "changed=true" >> $GITHUB_OUTPUT
+
+            # Extract added quest titles for the Discord message
+            ADDED=$(python3 - <<'EOF'
+          import json, sys
+
+          with open("quests.json") as f:
+              old = json.load(f)
+          with open("quests_new.json") as f:
+              new = json.load(f)
+
+          old_ids = {q.get("id") for q in old}
+          added = [q for q in new if q.get("id") not in old_ids]
+
+          for q in added:
+              label = q.get("config", {}).get("messages", {}).get("task_incomplete_message") \
+                      or q.get("label") \
+                      or q.get("id") \
+                      or "Unknown Quest"
+              print(f"• {label}")
+          EOF
+            )
+
+            echo "ADDED_QUESTS<<EOF" >> $GITHUB_ENV
+            echo "$ADDED" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+
+            mv quests_new.json quests.json
           else
             echo "No differences found."
             rm quests_new.json
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and Push Changes
+      - name: Commit and push updated quests.json
         if: steps.compare.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add quests.json
-          git commit -m "Sync quests.json [skip ci]" || echo "No changes to commit"
+          git commit -m "Sync quests.json [skip ci]"
           git push origin main
 
-      - name: Notify Discord
+      - name: Send Discord notification
         run: |
           if [ "${{ steps.compare.outputs.changed }}" == "true" ]; then
-            MSG="🚀 **Update Detected!** Quests file has been synced."
+            if [ -n "$ADDED_QUESTS" ]; then
+              MSG="🆕 **New Discord Quest(s) Detected!**\n\n$ADDED_QUESTS"
+            else
+              MSG="✏️ **Quests file updated** — existing quests may have been modified."
+            fi
           else
-            MSG="✅ **Check Complete**: No changes found."
+            MSG="✅ **No changes** in quests.json."
           fi
-          curl -H "Content-Type: application/json" -d "{\"content\": \"$MSG\"}" ${{ secrets.DISCORD_WEBHOOK }}
+
+          python3 -c "
+          import json, urllib.request, os, sys
+
+          msg = os.environ.get('MSG', 'Check complete.')
+          webhook = '${{ secrets.DISCORD_WEBHOOK }}'
+          payload = json.dumps({'content': msg}).encode()
+          req = urllib.request.Request(webhook, data=payload, headers={'Content-Type': 'application/json'})
+          urllib.request.urlopen(req)
+          "
