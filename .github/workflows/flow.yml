@@ -23,17 +23,25 @@ jobs:
             "https://raw.githubusercontent.com/aamiaa/discord-api-diff/main/quests.json" \
             -o quests_new.json
 
+          # Validate the downloaded file is actually valid JSON
+          if ! python3 -c "import json; json.load(open('quests_new.json'))" 2>/dev/null; then
+            echo "Downloaded file is not valid JSON — aborting."
+            cat quests_new.json
+            exit 1
+          fi
+
       - name: Compare with saved version
         id: compare
         run: |
-          if [ ! -f "quests.json" ]; then
-            echo "No saved version found — treating as first run."
+          # If no saved version exists, or saved version is invalid, treat as first run
+          if [ ! -f "quests.json" ] || ! python3 -c "import json; json.load(open('quests.json'))" 2>/dev/null; then
+            echo "No valid saved version found — saving as baseline, no notification."
             cp quests_new.json quests.json
             echo "changed=false" >> $GITHUB_OUTPUT
+
           elif ! diff -q quests.json quests_new.json > /dev/null 2>&1; then
             echo "changed=true" >> $GITHUB_OUTPUT
 
-            # Extract added quest titles for the Discord message
             ADDED=$(python3 - <<'EOF'
           import json, sys
 
@@ -59,6 +67,7 @@ jobs:
             echo "EOF" >> $GITHUB_ENV
 
             mv quests_new.json quests.json
+
           else
             echo "No differences found."
             rm quests_new.json
@@ -87,7 +96,7 @@ jobs:
           fi
 
           python3 -c "
-          import json, urllib.request, os, sys
+          import json, urllib.request, os
 
           msg = os.environ.get('MSG', 'Check complete.')
           webhook = '${{ secrets.DISCORD_WEBHOOK }}'
