@@ -2,7 +2,7 @@ name: Monitor Discord Quests
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -56,7 +56,7 @@ jobs:
                       or q.get("label") \
                       or q.get("id") \
                       or "Unknown Quest"
-              print(f"• {label}")
+              print(f"**{label}**")
           EOF
             )
 
@@ -82,12 +82,15 @@ jobs:
           git push origin main
 
       - name: Send Discord notification
-        if: steps.compare.outputs.changed == 'true'
         run: |
-          if [ -n "$ADDED_QUESTS" ]; then
-            MSG="🆕 **New Discord Quest(s) Detected!**\n\n$ADDED_QUESTS"
+          if [ "${{ steps.compare.outputs.changed }}" == "true" ]; then
+            if [ -n "$ADDED_QUESTS" ]; then
+              MSG="🚨 **__QUEST UPDATE DETECTED!__** 🚨\n\n**New quest(s) have appeared:**\n$ADDED_QUESTS\n\n> Check Discord for the latest quests!"
+            else
+              MSG="✏️ **__Quests File Modified__**\n\nThe quests file has changed but no new quests were added — existing quests may have been **edited or removed**."
+            fi
           else
-            MSG="✏️ **Quests file updated** — existing quests may have been modified."
+            MSG="🔍 **Routine Check Complete** — No changes found in quests.json."
           fi
 
           curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
