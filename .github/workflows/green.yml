@@ -1,0 +1,155 @@
+
+
+name: idk if this will work
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check-file:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout monitor repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download latest quest files
+        run: |
+          BASE_URL="https://raw.githubusercontent.com/xGustavvo/discord-api-tracker/main"
+
+          declare -A REGIONS=(
+            [br]="Brazil"
+            [ca]="Canada"
+            [de]="Germany"
+            [fr]="France"
+            [gb]="United Kingdom"
+            [us]="United States"
+          )
+
+          for CODE in "${!REGIONS[@]}"; do
+            FILE="user-quests-${CODE}.json"
+            URL="${BASE_URL}/${FILE}"
+
+            echo "--- Downloading ${FILE} ---"
+            curl -s \
+              -H "Accept: application/octet-stream" \
+              -A "Mozilla/5.0 (compatible; GitHub Actions)" \
+              "${URL}" \
+              -o "${FILE}.new"
+
+            if ! python3 -c "import json; json.load(open('${FILE}.new'))" 2>/dev/null; then
+              echo "ERROR: ${FILE} is not valid JSON. Skipping."
+              cat "${FILE}.new"
+              rm -f "${FILE}.new"
+            else
+              echo "Download OK for ${FILE}"
+            fi
+          done
+
+      - name: Compare and update quest files
+        id: compare
+        run: |
+          declare -A REGIONS=(
+            [br]="Brazil"
+            [ca]="Canada"
+            [de]="Germany"
+            [fr]="France"
+            [gb]="United Kingdom"
+            [us]="United States"
+          )
+
+          CHANGED_REGIONS=""
+          BASELINE_REGIONS=""
+          ANY_CHANGE=false
+
+          for CODE in "${!REGIONS[@]}"; do
+            FILE="user-quests-${CODE}.json"
+            NEW_FILE="${FILE}.new"
+
+            if [ ! -f "$NEW_FILE" ]; then
+              echo "Skipping ${CODE} — no downloaded file."
+              continue
+            fi
+
+            if [ ! -f "$FILE" ]; then
+              echo "No baseline for ${CODE} — saving as baseline."
+              mv "$NEW_FILE" "$FILE"
+              BASELINE_REGIONS="${BASELINE_REGIONS}${CODE},"
+              ANY_CHANGE=true
+            elif ! diff -q "$FILE" "$NEW_FILE" > /dev/null 2>&1; then
+              echo "Change detected in ${CODE}."
+              mv "$NEW_FILE" "$FILE"
+              CHANGED_REGIONS="${CHANGED_REGIONS}${CODE},"
+              ANY_CHANGE=true
+            else
+              echo "No changes in ${CODE}."
+              rm -f "$NEW_FILE"
+            fi
+          done
+
+          echo "changed_regions=${CHANGED_REGIONS}" >> $GITHUB_OUTPUT
+          echo "baseline_regions=${BASELINE_REGIONS}" >> $GITHUB_OUTPUT
+          echo "any_change=${ANY_CHANGE}" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated quest files
+        if: steps.compare.outputs.any_change == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add user-quests-*.json
+          git commit -m "Sync quest files [skip ci]"
+          git push origin main
+
+      - name: Send Discord notifications
+        run: |
+          CHANGED="${{ steps.compare.outputs.changed_regions }}"
+          BASELINE="${{ steps.compare.outputs.baseline_regions }}"
+          BASE_URL="https://github.com/xGustavvo/discord-api-tracker/blob/main"
+
+          declare -A REGION_NAMES=(
+            [br]="🇧🇷 Brazil"
+            [ca]="🇨🇦 Canada"
+            [de]="🇩🇪 Germany"
+            [fr]="🇫🇷 France"
+            [gb]="🇬🇧 United Kingdom"
+            [us]="🇺🇸 United States"
+          )
+
+          # Send update notifications for changed regions
+          IFS=',' read -ra CHANGED_LIST <<< "$CHANGED"
+          for CODE in "${CHANGED_LIST[@]}"; do
+            [ -z "$CODE" ] && continue
+            NAME="${REGION_NAMES[$CODE]}"
+            FILE_URL="${BASE_URL}/user-quests-${CODE}.json"
+            MSG="🚨 **__QUEST UPDATE DETECTED — ${NAME}!__** 🚨\n\nThe **user-quests-${CODE}.json** file has changed.\n\n> <${FILE_URL}>"
+            curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
+              -H "Content-Type: application/json" \
+              -d "{\"content\": \"$MSG\"}"
+          done
+
+          # Send baseline notifications
+          IFS=',' read -ra BASELINE_LIST <<< "$BASELINE"
+          for CODE in "${BASELINE_LIST[@]}"; do
+            [ -z "$CODE" ]; continue
+            NAME="${REGION_NAMES[$CODE]}"
+            MSG="📦 **Baseline saved for ${NAME}** — no prior version existed. Monitoring started."
+            curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
+              -H "Content-Type: application/json" \
+              -d "{\"content\": \"$MSG\"}"
+          done
+
+          # If nothing changed at all, send a routine check message
+          if [ -z "$CHANGED" ] && [ -z "$BASELINE" ]; then
+            MSG="🔍 **Routine check complete** — no changes found in any regional quest files."
+            curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" \
+              -H "Content-Type: application/json" \
+              -d "{\"content\": \"$MSG\"}"
+          fi
+
+
