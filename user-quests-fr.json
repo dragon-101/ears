@@ -1,0 +1,3617 @@
+{
+  "quests": [
+    {
+      "id": "1475591247103004672",
+      "config": {
+        "id": "1475591247103004672",
+        "config_version": 2,
+        "starts_at": "2026-03-03T00:18:48+00:00",
+        "expires_at": "2026-03-15T23:00:48+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "id": "356875762940379136",
+          "name": "World of Warcraft"
+        },
+        "assets": {
+          "hero": "quests/1475591247103004672/1475594082549108907.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "FvcJCoJUK5pvh4eH24CqCIg=",
+          "quest_bar_hero": "quests/1475591247103004672/1475594082549108907.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1475594623991939233.png",
+          "logotype": "1475594295409901638.png",
+          "game_tile_light": "quests/1475591247103004672/1475594336392445962.png",
+          "game_tile_dark": "quests/1475591247103004672/1475594336392445962.png",
+          "logotype_light": "quests/1475591247103004672/1475594212996022293.png",
+          "logotype_dark": "quests/1475591247103004672/1475594256830828544.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "World of Warcraft: Midnight",
+          "game_title": " World of Warcraft: Midnight",
+          "game_publisher": "Blizzard Entertainment"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "356875762940379136"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 1,
+              "sku_id": "1475591247103004673",
+              "asset": "quests/1475591247103004672/1478114014742708335.png",
+              "asset_video": null,
+              "messages": {
+                "name": "Razeshi C. Pet",
+                "name_with_article": "a Razeshi C. Pet",
+                "redemption_instructions_by_platform": {
+                  "0": "1. Login to the Battle.net Desktop App\n\n2. Click your profile icon at the top right corner of the App\n\n3. Click Redeem Code"
+                }
+              },
+              "approximate_count": null,
+              "redemption_link": null
+            }
+          ],
+          "rewards_expire_at": "2026-04-14T23:00:48+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1470483893688991745",
+      "config": {
+        "id": "1470483893688991745",
+        "config_version": 2,
+        "starts_at": "2026-02-15T08:00:00+00:00",
+        "expires_at": "2026-02-22T07:59:00+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "id": "1437509662303059998",
+          "name": "Where Winds Meet"
+        },
+        "assets": {
+          "hero": "quests/1470483893688991745/1470485724988965097.jpg",
+          "hero_video": "quests/1470483893688991745/1470485781452947486.mp4",
+          "quest_bar_hero_blurhash": "TygKFIJadXiPd3d1iIhId5DUBw==",
+          "quest_bar_hero": "quests/1470483893688991745/1470485615945449553.jpg",
+          "quest_bar_hero_video": "quests/1470483893688991745/1470485673160212692.mp4",
+          "game_tile": "1470486356529774633.png",
+          "logotype": "1470486353350230109.png",
+          "game_tile_light": "quests/1470483893688991745/1470486241249202322.png",
+          "game_tile_dark": "quests/1470483893688991745/1470486241249202322.png",
+          "logotype_light": "quests/1470483893688991745/1470485891603501332.png",
+          "logotype_dark": "quests/1470483893688991745/1470485891603501332.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Where Winds Meet Ver 1.3",
+          "game_title": "Where Winds Meet",
+          "game_publisher": "Netease"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-24T07:59:00+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "button_label": "Jouer au jeu"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1468654050840019074",
+      "config": {
+        "id": "1468654050840019074",
+        "config_version": 2,
+        "starts_at": "2026-02-16T18:00:51+00:00",
+        "expires_at": "2026-02-26T00:00:51+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1468654050840019074/1469101859569664172.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "jPcFHIB0aplvh4WZeafgUvyBag==",
+          "quest_bar_hero": "quests/1468654050840019074/1471655346773688404.jpg",
+          "quest_bar_hero_video": "quests/1468654050840019074/1471655385436917923.mp4",
+          "game_tile": "1468658166244839567.png",
+          "logotype": "1468658165183676486.png",
+          "game_tile_light": "quests/1468654050840019074/1468655004792520735.png",
+          "game_tile_dark": "quests/1468654050840019074/1468655004792520735.png",
+          "logotype_light": "quests/1468654050840019074/1468655114003677429.png",
+          "logotype_dark": "quests/1468654050840019074/1468655157611856094.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "World of Warcraft: Midnight Video",
+          "game_title": "World of Warcraft",
+          "game_publisher": "Blizzard Entertainment"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 69
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 69
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 69,
+              "assets": {
+                "video": {
+                  "url": "quests/1468654050840019074/1471337928524304414_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1468654050840019074/1471337928524304414_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1468654050840019074/1471337928524304414.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "World of Warcraft: Midnight Trailer"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 69,
+              "assets": {
+                "video": {
+                  "url": "quests/1468654050840019074/1471337928524304414_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1468654050840019074/1471337928524304414_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1468654050840019074/1471337928524304414.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468654050840019074/1469064784786886706.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "World of Warcraft: Midnight Trailer"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-28T00:00:51+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "Midnight Pre-Expansion Update Trailer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1470834003434017026",
+      "config": {
+        "id": "1470834003434017026",
+        "config_version": 2,
+        "starts_at": "2026-02-12T18:00:13+00:00",
+        "expires_at": "2026-02-20T00:00:13+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://scarlet.movie/",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1470834003434017026/1470929405185622110.jpg",
+          "hero_video": "quests/1470834003434017026/1470929522546442476.mp4",
+          "quest_bar_hero_blurhash": "lSgGAoD+vZZFkkNkgEYHlVQ=",
+          "quest_bar_hero": "quests/1470834003434017026/1470929405185622110.jpg",
+          "quest_bar_hero_video": "quests/1470834003434017026/1473719835459322007.mp4",
+          "game_tile": "1470929269613138032.png",
+          "logotype": "1470929268572819609.png",
+          "game_tile_light": "quests/1470834003434017026/1470929097965178902.png",
+          "game_tile_dark": "quests/1470834003434017026/1470929097965178902.png",
+          "logotype_light": "quests/1470834003434017026/1470929192697729128.png",
+          "logotype_dark": "quests/1470834003434017026/1470929247114629315.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Scarlet",
+          "game_title": "From Director Mamoru Hosoda, Now Playing in Theaters",
+          "game_publisher": "Sony Pictures Classics"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 53
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 53
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 53,
+              "assets": {
+                "video": {
+                  "url": "quests/1470834003434017026/1470929866768777257_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1470834003434017026/1470929866768777257_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                },
+                "video_hls": {
+                  "url": "quests/1470834003434017026/1470929866768777257.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                }
+              },
+              "messages": {
+                "video_title": "Scarlet Trailer"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 53,
+              "assets": {
+                "video": {
+                  "url": "quests/1470834003434017026/1470929866768777257_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1470834003434017026/1470929866768777257_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                },
+                "video_hls": {
+                  "url": "quests/1470834003434017026/1470929866768777257.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1470834003434017026/1470929938747101327.png"
+                }
+              },
+              "messages": {
+                "video_title": "Scarlet Trailer"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-22T00:00:13+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://scarlet.movie/",
+          "button_label": "Obtenir des tickets",
+          "subtitle": "From Director Mamoru Hosoda, Now Playing in Theaters"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1463558755621929219",
+      "config": {
+        "id": "1463558755621929219",
+        "config_version": 2,
+        "starts_at": "2026-03-02T18:00:58+00:00",
+        "expires_at": "2026-03-15T23:00:58+00:00",
+        "features": [
+          8,
+          27,
+          15
+        ],
+        "application": {
+          "link": "https://www.netflix.com/title/80217863",
+          "id": "1462745149783150674",
+          "name": "One Piece Season 2"
+        },
+        "assets": {
+          "hero": "quests/1463558755621929219/1477044888737415399.jpg",
+          "hero_video": "quests/1463558755621929219/1477044834270187551.mp4",
+          "quest_bar_hero_blurhash": "DjkGFIJva3e5dodYiJp/rd6y+w==",
+          "quest_bar_hero": "quests/1463558755621929219/1477044156651278517.jpg",
+          "quest_bar_hero_video": "quests/1463558755621929219/1477044834270187551.mp4",
+          "game_tile": "1477045017200562206.png",
+          "logotype": "1477045016223551780.png",
+          "game_tile_light": "quests/1463558755621929219/1477044970815885332.png",
+          "game_tile_dark": "quests/1463558755621929219/1477044970815885332.png",
+          "logotype_light": "quests/1463558755621929219/1477044946027675868.png",
+          "logotype_dark": "quests/1463558755621929219/1477044946027675868.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "One Piece Gachapon",
+          "game_title": "One Piece Season 2",
+          "game_publisher": "Netflix"
+        },
+        "task_config": {
+          "type": 2,
+          "join_operator": "or",
+          "tasks": {
+            "progress": {
+              "event_name": "progress",
+              "title": "One Piece Gachapon Quest",
+              "description": "Collect all 5 Straw Hat Figures to claim 700 Orbs!",
+              "target": 1
+            }
+          },
+          "enrollment_url": "https://www.discord.com",
+          "developer_application_id": "1462745149783150674"
+        },
+        "task_config_v2": {
+          "tasks": {
+            "ACHIEVEMENT_IN_ACTIVITY": {
+              "type": "ACHIEVEMENT_IN_ACTIVITY",
+              "target": 1,
+              "applications": [
+                {
+                  "id": "1462745149783150674"
+                }
+              ],
+              "event_name": "progress",
+              "messages": {
+                "task_title": "One Piece Gachapon Quest",
+                "task_description": "Collect all 5 Straw Hat Figures to claim 700 Orbs!"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-14T23:00:58+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.netflix.com/title/80217863",
+          "button_label": "Regarder",
+          "subtitle": "Watch One Piece Season 2 only on Netflix"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1478512780595167233",
+      "config": {
+        "id": "1478512780595167233",
+        "config_version": 2,
+        "starts_at": "2026-03-10T17:00:56+00:00",
+        "expires_at": "2026-03-25T00:00:56+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N7657.3866164DISCORD.COM/B35336492.441336835;dc_trk_aid=635066988;dc_trk_cid=251709255;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "id": "542075586886107149",
+          "name": "Apex Legends"
+        },
+        "assets": {
+          "hero": "quests/1478512780595167233/1478513795717529610.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "XMcFDIIKo2ebe6U2uViQMgUbpw==",
+          "quest_bar_hero": "quests/1478512780595167233/1478513683549257859.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1478514466348990615.png",
+          "logotype": "1478514464620941445.png",
+          "game_tile_light": "quests/1478512780595167233/1478514333653799033.png",
+          "game_tile_dark": "quests/1478512780595167233/1478514333653799033.png",
+          "logotype_light": "quests/1478512780595167233/1478514182474305629.png",
+          "logotype_dark": "quests/1478512780595167233/1478514120910180574.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Apex Legends x Gundam Event",
+          "game_title": "Apex Legends",
+          "game_publisher": "Apex Legends"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "542075586886107149"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "542075586886107149"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "542075586886107149"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 1,
+              "sku_id": "1478512780595167234",
+              "asset": "quests/1478512780595167233/1478516968041615373.jpg",
+              "asset_video": null,
+              "messages": {
+                "name": "Gundam Wing Zero Trackers",
+                "name_with_article": "Gundam Wing Zero Trackers",
+                "redemption_instructions_by_platform": {
+                  "0": "Codes are not platform specific and are redeemed from within the Apex Legends Storefront.        \n1. Boot Apex Legends on your platform of choice.  \n2. When on the lobby screen select [Store].  \n3. Select [Redeem Code] on the bottom left.  \n4. Enter the code you received.  \n5. Select [Redeem].    \n\nRequires EA account."
+                }
+              },
+              "approximate_count": null,
+              "redemption_link": null
+            }
+          ],
+          "rewards_expire_at": "2026-04-24T00:00:56+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N7657.3866164DISCORD.COM/B35336492.441336835;dc_trk_aid=635066988;dc_trk_cid=251709255;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1466549730191343881",
+      "config": {
+        "id": "1466549730191343881",
+        "config_version": 2,
+        "starts_at": "2026-02-06T03:00:02+00:00",
+        "expires_at": "2026-02-11T07:59:02+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://wuwa.kurogames-global.com/DiscordQuestV5",
+          "id": "1247227126416146462",
+          "name": "Wuthering Waves"
+        },
+        "assets": {
+          "hero": "quests/1466549730191343881/1468277363916669125.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "k9YRFwRlaHiJh3eQeIiHaHd3iAe4VHAK",
+          "quest_bar_hero": "quests/1466549730191343881/1468277418237104199.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1467937096412168484.png",
+          "logotype": "1466556072486633605.png",
+          "game_tile_light": "quests/1466549730191343881/1467937078409957377.png",
+          "game_tile_dark": "quests/1466549730191343881/1467937078409957377.png",
+          "logotype_light": "quests/1466549730191343881/1466555862171521034.png",
+          "logotype_dark": "quests/1466549730191343881/1466555897152274587.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "V3.1 WUWA",
+          "game_title": "Wuthering Waves",
+          "game_publisher": "Kuro Games"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1247227126416146462"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1247227126416146462"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 1,
+              "sku_id": "1466549730191343882",
+              "asset": "quests/1466549730191343881/1467937078409957377.png",
+              "asset_video": null,
+              "messages": {
+                "name": "V3.1 WUWA Quest Pack",
+                "name_with_article": "a V3.1 WUWA Quest Pack",
+                "redemption_instructions_by_platform": {
+                  "0": "\"The V3.1 WUWA Quest Pack includes Shell Credit, Advanced Resonance Potion, Advanced Energy Core and Astrite.\n1. Select your server and enter the game, and then go to [Settings] - [Other] - [Redemption Code].\n2. Enter the [Redemption Code] and hit [Confirm] to redeem rewards. You can then claim them in your in-game mail.\n*The [Redemption Code] function will be unlocked once you've reached Union Level 2.\""
+                }
+              },
+              "approximate_count": null,
+              "redemption_link": null
+            }
+          ],
+          "rewards_expire_at": "2026-03-13T07:59:02+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://wuwa.kurogames-global.com/DiscordQuestV5",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "Start Wuthering Waves V3.1 Now and Claim 1,600 Astrites For Free."
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1474092541644247315",
+      "config": {
+        "id": "1474092541644247315",
+        "config_version": 2,
+        "starts_at": "2026-03-01T08:00:29+00:00",
+        "expires_at": "2026-03-11T06:59:29+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "id": "1437509662303059998",
+          "name": "Where Winds Meet"
+        },
+        "assets": {
+          "hero": "quests/1474092541644247315/1478799732317880474.jpg",
+          "hero_video": "quests/1474092541644247315/1478799823993045214.mp4",
+          "quest_bar_hero_blurhash": "WUoOHIIEi3d7h4h4hogCawmhdg==",
+          "quest_bar_hero": "quests/1474092541644247315/1478799479363866708.jpg",
+          "quest_bar_hero_video": "quests/1474092541644247315/1480932799396581528.mp4",
+          "game_tile": "1476705282859204798.png",
+          "logotype": "1476705279168217251.png",
+          "game_tile_light": "quests/1474092541644247315/1476705181679882290.png",
+          "game_tile_dark": "quests/1474092541644247315/1476705181679882290.png",
+          "logotype_light": "quests/1474092541644247315/1476704765831549171.png",
+          "logotype_dark": "quests/1474092541644247315/1476704765831549171.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Where Winds Meet Ver 1.4",
+          "game_title": "Where Winds Meet",
+          "game_publisher": "NetEase"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-10T06:59:29+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1479195401532735640",
+      "config": {
+        "id": "1479195401532735640",
+        "config_version": 2,
+        "starts_at": "2026-03-09T17:00:25+00:00",
+        "expires_at": "2026-03-16T00:00:25+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://www.netflix.com/title/80217863",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1479195401532735640/1479196692745293906.jpg",
+          "hero_video": "quests/1479195401532735640/1479197483706880070.mp4",
+          "quest_bar_hero_blurhash": "yigGDIJT9Wm+l4qokooGzBgwqg==",
+          "quest_bar_hero": "quests/1479195401532735640/1479196484749627422.jpg",
+          "quest_bar_hero_video": "quests/1479195401532735640/1479197483706880070.mp4",
+          "game_tile": "1479197804827115550.png",
+          "logotype": "1480594690817654926.png",
+          "game_tile_light": "quests/1479195401532735640/1479197665920028733.png",
+          "game_tile_dark": "quests/1479195401532735640/1479197665920028733.png",
+          "logotype_light": "quests/1479195401532735640/1480594667316711545.png",
+          "logotype_dark": "quests/1479195401532735640/1480594667316711545.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "One Piece Season 2",
+          "game_title": "One Piece Season 2",
+          "game_publisher": "Netflix"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 29
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 29
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 29,
+              "assets": {
+                "video": {
+                  "url": "quests/1479195401532735640/1479198785572831394_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1479195401532735640/1479198785572831394_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1479195401532735640/1479198785572831394.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 29,
+              "assets": {
+                "video": {
+                  "url": "quests/1479195401532735640/1479198722415136889_1080.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1479195401532735640/1479198722415136889_720.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1479195401532735640/1479198722415136889.m3u8",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1479195401532735640/1479198972315959396.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 3,
+              "sku_id": "1479191582002516020",
+              "asset": "quests/1479195401532735640/1479209054361620521.mp4",
+              "asset_video": null,
+              "messages": {
+                "name": "One Piece Avatar Decoration",
+                "name_with_article": "a One Piece Avatar Decoration",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "expires_at": "2026-05-15T00:00:00+00:00",
+              "expires_at_premium": null,
+              "expiration_mode": 3
+            }
+          ],
+          "rewards_expire_at": "2026-04-15T00:00:25+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.netflix.com/title/80217863",
+          "button_label": "Regarder",
+          "subtitle": "Watch One Piece Season 2 only on Netflix"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1476354513831989278",
+      "config": {
+        "id": "1476354513831989278",
+        "config_version": 2,
+        "starts_at": "2026-03-01T18:00:45+00:00",
+        "expires_at": "2026-03-05T07:59:45+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439473568;dc_trk_aid=633518134;dc_trk_cid=249700879;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1476354513831989278/1476357451921096767.jpg",
+          "hero_video": "quests/1476354513831989278/1476357388440305947.mp4",
+          "quest_bar_hero_blurhash": "xngGFIYNqlVqlFmHh2UKjLXAWA==",
+          "quest_bar_hero": "quests/1476354513831989278/1476357328608690419.jpg",
+          "quest_bar_hero_video": "quests/1476354513831989278/1476357388440305947.mp4",
+          "game_tile": "1476357933645299914.png",
+          "logotype": "1476357932601053335.png",
+          "game_tile_light": "quests/1476354513831989278/1476357621106606182.png",
+          "game_tile_dark": "quests/1476354513831989278/1476357621106606182.png",
+          "logotype_light": "quests/1476354513831989278/1476357569613402123.png",
+          "logotype_dark": "quests/1476354513831989278/1476357569613402123.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Marathon Trailer",
+          "game_title": "Marathon",
+          "game_publisher": "Bungie"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 28
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 28
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 28,
+              "assets": {
+                "video": {
+                  "url": "quests/1476354513831989278/1476392812357619794_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1476354513831989278/1476392812357619794_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1476354513831989278/1476392812357619794.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 28,
+              "assets": {
+                "video": {
+                  "url": "quests/1476354513831989278/1476392812357619794_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1476354513831989278/1476392812357619794_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1476354513831989278/1476392812357619794.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476354513831989278/1476392958612738212.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "200 Orbs",
+                "name_with_article": "200 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 200,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-04T07:59:45+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439473568;dc_trk_aid=633518134;dc_trk_cid=249700879;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "button_label": "Précommander",
+          "subtitle": "Disponible le 5 mars - Précommandez maintenant. Disponible sur PS5, Xbox et Steam."
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1473453463752151071",
+      "config": {
+        "id": "1473453463752151071",
+        "config_version": 2,
+        "starts_at": "2026-02-26T18:00:01+00:00",
+        "expires_at": "2026-03-12T23:00:01+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.ubisoft.com/6638e5dcaa201a2d55bcc772.html",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1473453463752151071/1473454998745780334.jpg",
+          "hero_video": "quests/1473453463752151071/1474074419335921765.mp4",
+          "quest_bar_hero_blurhash": "pBgODIJJh3iPd3eLh3rQNSaPdA==",
+          "quest_bar_hero": "quests/1473453463752151071/1473454915627257996.jpg",
+          "quest_bar_hero_video": "quests/1473453463752151071/1474074419335921765.mp4",
+          "game_tile": "1473455281299263640.jpg",
+          "logotype": "1473455280313471006.png",
+          "game_tile_light": "quests/1473453463752151071/1473455094094762067.jpg",
+          "game_tile_dark": "quests/1473453463752151071/1473455094094762067.jpg",
+          "logotype_light": "quests/1473453463752151071/1473455053762334905.png",
+          "logotype_dark": "quests/1473453463752151071/1473455053762334905.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Anno 117 25% Discount",
+          "game_title": "Anno 117: Pax Romana",
+          "game_publisher": "Ubisoft"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 71
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 71
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 71,
+              "assets": {
+                "video": {
+                  "url": "quests/1473453463752151071/1474078269472247818_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1473453463752151071/1474078269472247818_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                },
+                "video_hls": {
+                  "url": "quests/1473453463752151071/1474078269472247818.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 71,
+              "assets": {
+                "video": {
+                  "url": "quests/1473453463752151071/1474074763264528527_1080.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1473453463752151071/1474074763264528527_720.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                },
+                "video_hls": {
+                  "url": "quests/1473453463752151071/1474074763264528527.m3u8",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1473453463752151071/1474077982141448254.png"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-11T23:00:01+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.ubisoft.com/6638e5dcaa201a2d55bcc772.html",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "ANNO 117 IS 25% OFF FOR A LIMITED TIME!"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1465809392279748904",
+      "config": {
+        "id": "1465809392279748904",
+        "config_version": 2,
+        "starts_at": "2026-01-30T18:00:12+00:00",
+        "expires_at": "2026-02-09T00:00:12+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/2426960?af_media_source=Discord-web&af_campaign_id=2601300001&af_campaign=HQ_SW_BRD_US_LOTR_Discoed_STEAM_260130&af_adset=none&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F2426960%2F%3Futm_source%3DDiscord-web%26utm_medium%3Dbranding%26utm_campaign%3DHQ_SW_BRD_US_LOTR_Discoed_STEAM_260130%26utm_content%3Dnone",
+          "id": "1193947242319581376",
+          "name": "Summoners War"
+        },
+        "assets": {
+          "hero": "quests/1465809392279748904/1465820933200679144.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": null,
+          "quest_bar_hero": "quests/1465809392279748904/1465820887193489762.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1465821027857862698.png",
+          "logotype": "1465821026792374454.png",
+          "game_tile_light": "quests/1465809392279748904/1465821011093098667.png",
+          "game_tile_dark": "quests/1465809392279748904/1465821011093098667.png",
+          "logotype_light": "quests/1465809392279748904/1465820972757155911.png",
+          "logotype_dark": "quests/1465809392279748904/1465820972757155911.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Summoners War x The LOTR",
+          "game_title": "Summoners War x The LOTR",
+          "game_publisher": "Com2uS"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1193947242319581376"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-11T00:00:12+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/2426960?af_media_source=Discord-web&af_campaign_id=2601300001&af_campaign=HQ_SW_BRD_US_LOTR_Discoed_STEAM_260130&af_adset=none&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F2426960%2F%3Futm_source%3DDiscord-web%26utm_medium%3Dbranding%26utm_campaign%3DHQ_SW_BRD_US_LOTR_Discoed_STEAM_260130%26utm_content%3Dnone",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1474205151999950889",
+      "config": {
+        "id": "1474205151999950889",
+        "config_version": 2,
+        "starts_at": "2026-02-26T19:00:57+00:00",
+        "expires_at": "2026-03-02T18:00:57+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439493281;dc_trk_aid=633532444;dc_trk_cid=249700870;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "id": "1451409609632911453",
+          "name": "Marathon"
+        },
+        "assets": {
+          "hero": "quests/1474205151999950889/1474543767863300319.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "lfgJDIIIJoqaZpeDeaQCcnRpBA==",
+          "quest_bar_hero": "quests/1474205151999950889/1474543677631369256.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1474543990308208724.png",
+          "logotype": "1474543989284802570.png",
+          "game_tile_light": "quests/1474205151999950889/1474543864902586378.png",
+          "game_tile_dark": "quests/1474205151999950889/1474543864902586378.png",
+          "logotype_light": "quests/1474205151999950889/1474543821802045490.png",
+          "logotype_dark": "quests/1474205151999950889/1474543821802045490.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Marathon Server Slam",
+          "game_title": "Marathon",
+          "game_publisher": "Bungie"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-01T18:00:57+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439493281;dc_trk_aid=633532444;dc_trk_cid=249700870;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "button_label": "Jouer au jeu"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1470543032142139434",
+      "config": {
+        "id": "1470543032142139434",
+        "config_version": 2,
+        "starts_at": "2026-02-20T18:05:00+00:00",
+        "expires_at": "2026-03-06T00:00:00+00:00",
+        "features": [
+          26,
+          15
+        ],
+        "application": {
+          "link": "https://www.opera.com/gx/yoursetupwantsgx-discord?utm_source=discord&utm_medium=discord_quest&utm_campaign=discord_download",
+          "id": "1461077510887309650",
+          "name": "Opera GX"
+        },
+        "assets": {
+          "hero": "quests/1470543032142139434/1474090433926922293.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "iQcGFIIIN3djjJU2xZ22f6TWBw==",
+          "quest_bar_hero": "quests/1470543032142139434/1474090931631423814.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1470544262168051773.png",
+          "logotype": "1470544261106896928.png",
+          "game_tile_light": "quests/1470543032142139434/1470543887520104631.png",
+          "game_tile_dark": "quests/1470543032142139434/1470543887520104631.png",
+          "logotype_light": "quests/1470543032142139434/1470543914485289129.png",
+          "logotype_dark": "quests/1470543032142139434/1470543914485289129.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Opera GX",
+          "game_title": "Opera GX",
+          "game_publisher": "Opera GX"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 600
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 600,
+              "applications": [
+                {
+                  "id": "1461077510887309650"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-05T00:00:00+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.opera.com/gx/yoursetupwantsgx-discord?utm_source=discord&utm_medium=discord_quest&utm_campaign=discord_download",
+          "button_label": "Télécharger",
+          "subtitle": "Download Opera GX Now"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1478179540558938152",
+      "config": {
+        "id": "1478179540558938152",
+        "config_version": 2,
+        "starts_at": "2026-03-09T17:00:45+00:00",
+        "expires_at": "2026-03-23T00:00:45+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://ad.doubleclick.net/ddm/clk/633260822;438267665;o?https://wwe.2k.com/2k26/buy/?utm_source=Discord&utm_medium=CPM&utm_campaign=WWE-W26-ACQ-AWR-USA_F26",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1478179540558938152/1478183537340448788.jpg",
+          "hero_video": "quests/1478179540558938152/1478182778133549236.mp4",
+          "quest_bar_hero_blurhash": "j/cFEoIK/HdCdpaqCGWXMGY=",
+          "quest_bar_hero": "quests/1478179540558938152/1478183537340448788.jpg",
+          "quest_bar_hero_video": "quests/1478179540558938152/1478182778133549236.mp4",
+          "game_tile": "1478183975108345966.jpg",
+          "logotype": "1478183974047322203.png",
+          "game_tile_light": "quests/1478179540558938152/1478183782266962053.jpg",
+          "game_tile_dark": "quests/1478179540558938152/1478183782266962053.jpg",
+          "logotype_light": "quests/1478179540558938152/1478183617837662341.png",
+          "logotype_dark": "quests/1478179540558938152/1478183617837662341.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "WWE 2K26",
+          "game_title": "WWE 2K26",
+          "game_publisher": "WWE 2K26"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 29
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 29
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 29,
+              "assets": {
+                "video": {
+                  "url": "quests/1478179540558938152/1478184124761112616_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1478179540558938152/1478184124761112616_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1478179540558938152/1478184124761112616.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 29,
+              "assets": {
+                "video": {
+                  "url": "quests/1478179540558938152/1478184124761112616_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1478179540558938152/1478184124761112616_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1478179540558938152/1478184124761112616.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478179540558938152/1478185523083346101.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "200 Orbs",
+                "name_with_article": "200 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 200,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-22T00:00:45+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://ad.doubleclick.net/ddm/clk/633260822;438267665;o?https://wwe.2k.com/2k26/buy/?utm_source=Discord&utm_medium=CPM&utm_campaign=WWE-W26-ACQ-AWR-USA_F26",
+          "button_label": "Précommander",
+          "subtitle": "The Show Never Stops"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1478155979362275500",
+      "config": {
+        "id": "1478155979362275500",
+        "config_version": 2,
+        "starts_at": "2026-03-07T18:00:00+00:00",
+        "expires_at": "2026-03-19T06:59:59+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://www.paramountplus.com/?cbscidmt=sports",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1478155979362275500/1480713818907742278.jpg",
+          "hero_video": "quests/1478155979362275500/1479514401504755803.mp4",
+          "quest_bar_hero_blurhash": "WugJHIZXaGpQh5hhepemcW/22Q==",
+          "quest_bar_hero": "quests/1478155979362275500/1479514804031979600.jpg",
+          "quest_bar_hero_video": "quests/1478155979362275500/1479513372541190215.mp4",
+          "game_tile": "1479514821274763314.png",
+          "logotype": "1479514820205220023.png",
+          "game_tile_light": "quests/1478155979362275500/1479514507574247548.png",
+          "game_tile_dark": "quests/1478155979362275500/1479514507574247548.png",
+          "logotype_light": "quests/1478155979362275500/1479514460912750654.png",
+          "logotype_dark": "quests/1478155979362275500/1479514460912750654.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "UEFA Champions League",
+          "game_title": "UEFA Champions League on Paramount+",
+          "game_publisher": "Paramount+"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 29
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 14
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 29,
+              "assets": {
+                "video": {
+                  "url": "quests/1478155979362275500/1479515072484216862_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1478155979362275500/1479515072484216862_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1478155979362275500/1479515072484216862.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "UEFA Video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 14,
+              "assets": {
+                "video": {
+                  "url": "quests/1478155979362275500/1479514989038403807_1080.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1478155979362275500/1479514989038403807_720.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1478155979362275500/1479514989038403807.m3u8",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478155979362275500/1479615250432131072.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "UEFA Video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "200 Orbs",
+                "name_with_article": "200 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 200,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-18T06:59:59+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.paramountplus.com/?cbscidmt=sports",
+          "button_label": "En savoir plus",
+          "subtitle": "UEFA Champions League on Paramount+"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1465755539534381229",
+      "config": {
+        "id": "1465755539534381229",
+        "config_version": 2,
+        "starts_at": "2026-02-02T18:30:13+00:00",
+        "expires_at": "2026-02-15T00:00:13+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/2661300/Grounded_2/?OCID=cmmjz32yhhq_OLV_G2TTFP_DISC_USG2AA_Pre-Roll",
+          "id": "1399813841487007976",
+          "name": "Grounded 2"
+        },
+        "assets": {
+          "hero": "quests/1465755539534381229/1465756983964471510.jpg",
+          "hero_video": "quests/1465755539534381229/1465761932244947218.mp4",
+          "quest_bar_hero_blurhash": null,
+          "quest_bar_hero": "quests/1465755539534381229/1465756870093443208.jpg",
+          "quest_bar_hero_video": "quests/1465755539534381229/1465761932244947218.mp4",
+          "game_tile": "1465757349015719949.png",
+          "logotype": "1465757347044393050.png",
+          "game_tile_light": "quests/1465755539534381229/1465757269202440222.png",
+          "game_tile_dark": "quests/1465755539534381229/1465757269202440222.png",
+          "logotype_light": "quests/1465755539534381229/1465757117133881425.png",
+          "logotype_dark": "quests/1465755539534381229/1465757208749932685.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Empêtré dans l’aventure",
+          "game_title": "Grounded 2 ",
+          "game_publisher": "Obsidian Entertainment"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1399813841487007976"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1399813841487007976"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-17T00:00:13+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/2661300/Grounded_2/?OCID=cmmjz32yhhq_OLV_G2TTFP_DISC_USG2AA_Pre-Roll",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1479908639048470708",
+      "config": {
+        "id": "1479908639048470708",
+        "config_version": 2,
+        "starts_at": "2026-03-08T17:00:34+00:00",
+        "expires_at": "2026-03-16T00:00:34+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/2698940/The_Crew_Motorfest/",
+          "id": "1242326083647442984",
+          "name": "The Crew Motorfest"
+        },
+        "assets": {
+          "hero": "quests/1479908639048470708/1479912854697148637.jpg",
+          "hero_video": "quests/1479908639048470708/1479912907524276384.mp4",
+          "quest_bar_hero_blurhash": "lrYFFIJgdYm6SqapilZJcKcDdw==",
+          "quest_bar_hero": "quests/1479908639048470708/1479912653135679649.jpg",
+          "quest_bar_hero_video": "quests/1479908639048470708/1479912743095111982.mp4",
+          "game_tile": "1479913292544868433.png",
+          "logotype": "1479913291555016809.png",
+          "game_tile_light": "quests/1479908639048470708/1479913207509418005.png",
+          "game_tile_dark": "quests/1479908639048470708/1479913207509418005.png",
+          "logotype_light": "quests/1479908639048470708/1479913055113711688.png",
+          "logotype_dark": "quests/1479908639048470708/1479913055113711688.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Motorfest Play",
+          "game_title": "The Crew Motorfest",
+          "game_publisher": "Ubisoft"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1242326083647442984"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1242326083647442984"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1242326083647442984"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 1,
+              "sku_id": "1479908639048470709",
+              "asset": "quests/1479908639048470708/1479911643931476218.png",
+              "asset_video": null,
+              "messages": {
+                "name": "Camaro ZL1 NASCAR",
+                "name_with_article": "a Camaro ZL1 NASCAR",
+                "redemption_instructions_by_platform": {
+                  "0": "Motorfest redeem website\nhttps://redeem.ubisoft.com/the-crew-motorfest/"
+                }
+              },
+              "approximate_count": null,
+              "redemption_link": "https://redeem.ubisoft.com/the-crew-motorfest/"
+            }
+          ],
+          "rewards_expire_at": "2026-04-15T00:00:34+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/2698940/The_Crew_Motorfest/",
+          "button_label": "Jouer au jeu",
+          "subtitle": "Jump into the game and test drive your new ride!"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1466166994582769725",
+      "config": {
+        "id": "1466166994582769725",
+        "config_version": 2,
+        "starts_at": "2026-02-03T18:00:11+00:00",
+        "expires_at": "2026-02-17T00:00:11+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/2507950?utm_source=discordquest",
+          "id": "1314682894106497096",
+          "name": "Delta Force"
+        },
+        "assets": {
+          "hero": "quests/1466166994582769725/1467005449046986864.jpg",
+          "hero_video": "quests/1466166994582769725/1466973638501597486.mp4",
+          "quest_bar_hero_blurhash": "FRgKE4R/VUdpdVZUmHB3CIc=",
+          "quest_bar_hero": "quests/1466166994582769725/1466973519631093820.jpg",
+          "quest_bar_hero_video": "quests/1466166994582769725/1466973638501597486.mp4",
+          "game_tile": "1466974052513218704.png",
+          "logotype": "1467920655059128412.png",
+          "game_tile_light": "quests/1466166994582769725/1466973820312092733.png",
+          "game_tile_dark": "quests/1466166994582769725/1466973820312092733.png",
+          "logotype_light": "quests/1466166994582769725/1466973760220434696.png",
+          "logotype_dark": "quests/1466166994582769725/1467920616379126002.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "New Season \"Morphosis\"",
+          "game_title": "Delta Force",
+          "game_publisher": "Tencent"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1314682894106497096"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1314682894106497096"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1314682894106497096"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-19T00:00:11+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/2507950?utm_source=discordquest",
+          "button_label": "Jouer au jeu"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1473375367715750081",
+      "config": {
+        "id": "1473375367715750081",
+        "config_version": 2,
+        "starts_at": "2026-02-18T18:00:41+00:00",
+        "expires_at": "2026-02-25T00:00:41+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://www.stvatu.com/?utm_source=Discord&utm_medium=paid&utm_campaign=Launch&utm_content=quest",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1473375367715750081/1473376450542305364.jpg",
+          "hero_video": "quests/1473375367715750081/1473376405545812041.mp4",
+          "quest_bar_hero_blurhash": "iucFBIICbYcnlmmkSoWL9TS3Lw==",
+          "quest_bar_hero": "quests/1473375367715750081/1473376349241475102.jpg",
+          "quest_bar_hero_video": "quests/1473375367715750081/1473376405545812041.mp4",
+          "game_tile": "1473376794660049050.png",
+          "logotype": "1473376793586041177.png",
+          "game_tile_light": "quests/1473375367715750081/1473376630008184985.png",
+          "game_tile_dark": "quests/1473375367715750081/1473376630008184985.png",
+          "logotype_light": "quests/1473375367715750081/1473376529512661168.png",
+          "logotype_dark": "quests/1473375367715750081/1473376579966205953.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Star Trek: Voyager - Across the Unknown",
+          "game_title": "Star Trek: Voyager - Across the Unknown",
+          "game_publisher": "Daedalic Entertainment"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 90
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 90
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 90,
+              "assets": {
+                "video": {
+                  "url": "quests/1473375367715750081/1473377067147071630_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1473375367715750081/1473377067147071630_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                },
+                "video_hls": {
+                  "url": "quests/1473375367715750081/1473377067147071630.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                }
+              },
+              "messages": {
+                "video_title": "The Bridge Is Yours, Captain"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 90,
+              "assets": {
+                "video": {
+                  "url": "quests/1473375367715750081/1473377067147071630_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1473375367715750081/1473377067147071630_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                },
+                "video_hls": {
+                  "url": "quests/1473375367715750081/1473377067147071630.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1473375367715750081/1473379044094382142.png"
+                }
+              },
+              "messages": {
+                "video_title": "The Bridge Is Yours, Captain"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-27T00:00:41+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.stvatu.com/?utm_source=Discord&utm_medium=paid&utm_campaign=Launch&utm_content=quest",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "Available on PC, PS5, Xbox X|S, and Nintendo Switch 2"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1470854078983569606",
+      "config": {
+        "id": "1470854078983569606",
+        "config_version": 2,
+        "starts_at": "2026-02-22T08:00:59+00:00",
+        "expires_at": "2026-03-01T07:59:59+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "id": "1437509662303059998",
+          "name": "Where Winds Meet"
+        },
+        "assets": {
+          "hero": "quests/1470854078983569606/1470856401894117489.jpg",
+          "hero_video": "quests/1470854078983569606/1470856503761047674.mp4",
+          "quest_bar_hero_blurhash": "VRgOFIJ6ZYaMd3hwl3Y3Z3ByBg==",
+          "quest_bar_hero": "quests/1470854078983569606/1470856253877256302.jpg",
+          "quest_bar_hero_video": "quests/1470854078983569606/1470856323179610234.mp4",
+          "game_tile": "1470857196207345919.png",
+          "logotype": "1470857192675737702.png",
+          "game_tile_light": "quests/1470854078983569606/1470857100602114130.png",
+          "game_tile_dark": "quests/1470854078983569606/1470857100602114130.png",
+          "logotype_light": "quests/1470854078983569606/1470856682316894388.png",
+          "logotype_dark": "quests/1470854078983569606/1470856682316894388.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Where Winds Meet Ver 1.3",
+          "game_title": "Where Winds Meet",
+          "game_publisher": "Netease"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-31T07:59:59+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "button_label": "Jouer au jeu"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1478552018900746441",
+      "config": {
+        "id": "1478552018900746441",
+        "config_version": 2,
+        "starts_at": "2026-03-08T17:00:51+00:00",
+        "expires_at": "2026-03-16T00:00:51+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/2698940/The_Crew_Motorfest/",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1478552018900746441/1478805204949274798.jpg",
+          "hero_video": "quests/1478552018900746441/1478805256576958506.mp4",
+          "quest_bar_hero_blurhash": "lrYFFIJgdYm6SqapilZJcKcDdw==",
+          "quest_bar_hero": "quests/1478552018900746441/1478861698319384576.jpg",
+          "quest_bar_hero_video": "quests/1478552018900746441/1478805149123084489.mp4",
+          "game_tile": "1478806118493847633.png",
+          "logotype": "1478806048663146607.png",
+          "game_tile_light": "quests/1478552018900746441/1478806101393805322.png",
+          "game_tile_dark": "quests/1478552018900746441/1478806101393805322.png",
+          "logotype_light": "quests/1478552018900746441/1478805663420518623.png",
+          "logotype_dark": "quests/1478552018900746441/1478805663420518623.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Motorfest x NASCAR",
+          "game_title": "The Crew Motorfest",
+          "game_publisher": "Ubisoft"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 85
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 85
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 85,
+              "assets": {
+                "video": {
+                  "url": "quests/1478552018900746441/1478802186782773248_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1478552018900746441/1478802186782773248_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                },
+                "video_hls": {
+                  "url": "quests/1478552018900746441/1478802186782773248.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                }
+              },
+              "messages": {
+                "video_title": "TCM Fantasy Trailer"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 85,
+              "assets": {
+                "video": {
+                  "url": "quests/1478552018900746441/1478802617445388531_1080.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1478552018900746441/1478802617445388531_720.mp4",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                },
+                "video_hls": {
+                  "url": "quests/1478552018900746441/1478802617445388531.m3u8",
+                  "width": 1080,
+                  "height": 1920,
+                  "thumbnail": "quests/1478552018900746441/1478802691126857859.png"
+                }
+              },
+              "messages": {
+                "video_title": "TCM Fantasy Trailer"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 3,
+              "sku_id": "1479561706672885811",
+              "asset": "quests/1478552018900746441/1479890630183358607.mp4",
+              "asset_video": null,
+              "messages": {
+                "name": "The Crew Motorfest x NASCAR Avatar Decoration",
+                "name_with_article": "The Crew Motorfest x NASCAR Avatar Decoration",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "expires_at": "2026-05-15T00:00:00+00:00",
+              "expires_at_premium": null,
+              "expiration_mode": 3
+            }
+          ],
+          "rewards_expire_at": "2026-04-15T00:00:51+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/2698940/The_Crew_Motorfest/",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "Keep the fun going and try the game for free!"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1475549097506115665",
+      "config": {
+        "id": "1475549097506115665",
+        "config_version": 2,
+        "starts_at": "2026-02-25T18:00:19+00:00",
+        "expires_at": "2026-03-03T00:00:19+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/4251130/Arkheron_Demo/",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1475549097506115665/1475617210801193192.jpg",
+          "hero_video": "quests/1475549097506115665/1475617382147031170.mp4",
+          "quest_bar_hero_blurhash": "FqcNHIpnh3hwiXh1d3mXj3n4mA==",
+          "quest_bar_hero": "quests/1475549097506115665/1475617255864664458.jpg",
+          "quest_bar_hero_video": "quests/1475549097506115665/1475617382147031170.mp4",
+          "game_tile": "1475617302299807755.png",
+          "logotype": "1475617296092233749.png",
+          "game_tile_light": "quests/1475549097506115665/1475617122444120209.png",
+          "game_tile_dark": "quests/1475549097506115665/1475617122444120209.png",
+          "logotype_light": "quests/1475549097506115665/1475617156157935717.png",
+          "logotype_dark": "quests/1475549097506115665/1475617156157935717.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Arkheron Demo",
+          "game_title": "Arkheron",
+          "game_publisher": "Bonfire Studios"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 96
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 96
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 96,
+              "assets": {
+                "video": {
+                  "url": "quests/1475549097506115665/1475618287072051412_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                },
+                "video_low_res": {
+                  "url": "quests/1475549097506115665/1475618287072051412_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                },
+                "video_hls": {
+                  "url": "quests/1475549097506115665/1475618287072051412.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                }
+              },
+              "messages": {
+                "video_title": "Arkheron Video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 96,
+              "assets": {
+                "video": {
+                  "url": "quests/1475549097506115665/1475618287072051412_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                },
+                "video_low_res": {
+                  "url": "quests/1475549097506115665/1475618287072051412_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                },
+                "video_hls": {
+                  "url": "quests/1475549097506115665/1475618287072051412.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1475549097506115665/1475618135678914570.jpg",
+                  "caption": "quests/1475549097506115665/1475618903316107294.vtt"
+                }
+              },
+              "messages": {
+                "video_title": "Arkheron Video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-02T00:00:19+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/4251130/Arkheron_Demo/",
+          "button_label": "Jouer",
+          "subtitle": "Téléchargez dès maintenant la démo d’Arkheron"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1471340231008583894",
+      "config": {
+        "id": "1471340231008583894",
+        "config_version": 2,
+        "starts_at": "2026-02-27T00:00:47+00:00",
+        "expires_at": "2026-03-02T00:00:47+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1471340231008583894/1474064660406866052.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "SgcKDIBmd4iGd3iQh3hZei9wSw==",
+          "quest_bar_hero": "quests/1471340231008583894/1471344239567700009.jpg",
+          "quest_bar_hero_video": "quests/1471340231008583894/1471344419310534759.mp4",
+          "game_tile": "1471342217389150458.png",
+          "logotype": "1471344477338861672.png",
+          "game_tile_light": "quests/1471340231008583894/1471342036979421326.png",
+          "game_tile_dark": "quests/1471340231008583894/1471342036979421326.png",
+          "logotype_light": "quests/1471340231008583894/1471344172509298688.png",
+          "logotype_dark": "quests/1471340231008583894/1471344202313891963.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "World of Warcraft: Midnight Video",
+          "game_title": "World of Warcraft",
+          "game_publisher": "Blizzard Entertainment"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 126
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 126
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 126,
+              "assets": {
+                "video": {
+                  "url": "quests/1471340231008583894/1471344607043256448_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1471340231008583894/1471344607043256448_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1471340231008583894/1471344607043256448.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "Arator Cinematic: Immolation | World of Warcraft: Midnight"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 126,
+              "assets": {
+                "video": {
+                  "url": "quests/1471340231008583894/1471344607043256448_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1471340231008583894/1471344607043256448_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1471340231008583894/1471344607043256448.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1471340231008583894/1471344840754200647.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "Arator Cinematic: Immolation | World of Warcraft: Midnight"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-01T00:00:47+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://shop.battle.net/product/world-of-warcraft-midnight?utm_source=Discord&utm_medium=PaidGGM",
+          "button_label": "Obtenir le jeu",
+          "subtitle": "Stand Against the Void"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1468682555959283803",
+      "config": {
+        "id": "1468682555959283803",
+        "config_version": 2,
+        "starts_at": "2026-02-09T18:00:08+00:00",
+        "expires_at": "2026-02-16T00:00:08+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://playhighguard.com/",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1468682555959283803/1469409373968269332.jpg",
+          "hero_video": "quests/1468682555959283803/1469463914809921609.mp4",
+          "quest_bar_hero_blurhash": "SggGC4AFeIaEeFiHSIDjf6w=",
+          "quest_bar_hero": "quests/1468682555959283803/1469464523319808020.jpg",
+          "quest_bar_hero_video": "quests/1468682555959283803/1469463914809921609.mp4",
+          "game_tile": "1469411766567047218.png",
+          "logotype": "1469411678478139613.png",
+          "game_tile_light": "quests/1468682555959283803/1469411722447159410.png",
+          "game_tile_dark": "quests/1468682555959283803/1469411722447159410.png",
+          "logotype_light": "quests/1468682555959283803/1469411520742953145.png",
+          "logotype_dark": "quests/1468682555959283803/1469411575084613868.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Highguard: Episode 2",
+          "game_title": "Highguard",
+          "game_publisher": "Wildlight Entertainment "
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 131
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 131
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 131,
+              "assets": {
+                "video": {
+                  "url": "quests/1468682555959283803/1469416120996991080_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1468682555959283803/1469416120996991080_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1468682555959283803/1469416120996991080.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "Highguard Episode 2 Trailer"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 131,
+              "assets": {
+                "video": {
+                  "url": "quests/1468682555959283803/1469416120996991080_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                },
+                "video_low_res": {
+                  "url": "quests/1468682555959283803/1469416120996991080_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                },
+                "video_hls": {
+                  "url": "quests/1468682555959283803/1469416120996991080.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1468682555959283803/1469417085913530522.jpg"
+                }
+              },
+              "messages": {
+                "video_title": "Highguard Episode 2 Trailer"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 3,
+              "sku_id": "1469431511198601419",
+              "asset": "quests/1468682555959283803/1469457576608534588.mp4",
+              "asset_video": null,
+              "messages": {
+                "name": "Highguard Gregory Avatar Decoration",
+                "name_with_article": "a Highguard Gregory Avatar Decoration",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "expires_at": "2026-04-18T00:00:00+00:00",
+              "expires_at_premium": null,
+              "expiration_mode": 3
+            }
+          ],
+          "rewards_expire_at": "2026-03-18T00:00:08+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://playhighguard.com/",
+          "button_label": "En savoir plus"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1477027221175668829",
+      "config": {
+        "id": "1477027221175668829",
+        "config_version": 2,
+        "starts_at": "2026-03-05T18:00:51+00:00",
+        "expires_at": "2026-03-16T00:00:51+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439493278;dc_trk_aid=633414975;dc_trk_cid=250310709;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "id": "1451409609632911453",
+          "name": "Marathon"
+        },
+        "assets": {
+          "hero": "quests/1477027221175668829/1478168110031831050.jpg",
+          "hero_video": null,
+          "quest_bar_hero_blurhash": "CigKLIzgh5aWh3eThoX9tPh6aA==",
+          "quest_bar_hero": "quests/1477027221175668829/1478168064175636530.jpg",
+          "quest_bar_hero_video": null,
+          "game_tile": "1478168316785856543.png",
+          "logotype": "1478168315787739136.png",
+          "game_tile_light": "quests/1477027221175668829/1478168211810812099.png",
+          "game_tile_dark": "quests/1477027221175668829/1478168211810812099.png",
+          "logotype_light": "quests/1477027221175668829/1478168169905524746.png",
+          "logotype_dark": "quests/1477027221175668829/1478168169905524746.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Marathon Launch",
+          "game_title": "Marathon",
+          "game_publisher": "Bungie"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_XBOX": {
+              "event_name": "PLAY_ON_XBOX",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            },
+            "PLAY_ON_XBOX": {
+              "type": "PLAY_ON_XBOX",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1451409609632911453"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-15T00:00:51+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://ad.doubleclick.net/ddm/trackclk/N1306638.3397510DISCORD/B35130905.439493278;dc_trk_aid=633414975;dc_trk_cid=250310709;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
+          "button_label": "Jouer"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1468651135253483745",
+      "config": {
+        "id": "1468651135253483745",
+        "config_version": 2,
+        "starts_at": "2026-02-08T08:00:16+00:00",
+        "expires_at": "2026-02-15T07:59:16+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "id": "1437509662303059998",
+          "name": "Where Winds Meet"
+        },
+        "assets": {
+          "hero": "quests/1468651135253483745/1468652784957263942.jpg",
+          "hero_video": "quests/1468651135253483745/1468652839361446152.mp4",
+          "quest_bar_hero_blurhash": "SxgGFIIGqWeMZYmDaHYJmJWAOQ==",
+          "quest_bar_hero": "quests/1468651135253483745/1468652671903731945.jpg",
+          "quest_bar_hero_video": "quests/1468651135253483745/1468652731752382684.mp4",
+          "game_tile": "1468991380100481146.png",
+          "logotype": "1468653372067545211.png",
+          "game_tile_light": "quests/1468651135253483745/1468991357124350188.png",
+          "game_tile_dark": "quests/1468651135253483745/1468991357124350188.png",
+          "logotype_light": "quests/1468651135253483745/1468652937948696576.png",
+          "logotype_dark": "quests/1468651135253483745/1468652937948696576.png"
+        },
+        "colors": {
+          "primary": "#4752C4",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Where Winds Meet Ver 1.3",
+          "game_title": "Where Winds Meet",
+          "game_publisher": "Netease"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "event_name": "PLAY_ON_DESKTOP",
+              "target": 900
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "event_name": "PLAY_ON_PLAYSTATION",
+              "target": 900
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "PLAY_ON_DESKTOP": {
+              "type": "PLAY_ON_DESKTOP",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            },
+            "PLAY_ON_PLAYSTATION": {
+              "type": "PLAY_ON_PLAYSTATION",
+              "target": 900,
+              "applications": [
+                {
+                  "id": "1437509662303059998"
+                }
+              ]
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "700 Orbs",
+                "name_with_article": "700 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 700,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-03-17T07:59:16+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://store.steampowered.com/app/3564740/480?utm_source=DiscordOrbs",
+          "button_label": "Jouer au jeu"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    },
+    {
+      "id": "1476695876398350449",
+      "config": {
+        "id": "1476695876398350449",
+        "config_version": 2,
+        "starts_at": "2026-03-04T18:00:12+00:00",
+        "expires_at": "2026-03-14T00:00:12+00:00",
+        "features": [
+          15
+        ],
+        "application": {
+          "link": "https://www.lenovo.com/us/en/legion/",
+          "id": "545364944258990091",
+          "name": "Discord"
+        },
+        "assets": {
+          "hero": "quests/1476695876398350449/1476698077619290252.jpg",
+          "hero_video": "quests/1476695876398350449/1476698008002494545.mp4",
+          "quest_bar_hero_blurhash": "lBYGEoJlbXsqRAm+3kD0PxY=",
+          "quest_bar_hero": "quests/1476695876398350449/1476698077619290252.jpg",
+          "quest_bar_hero_video": "quests/1476695876398350449/1476698008002494545.mp4",
+          "game_tile": "1476698195017994440.png",
+          "logotype": "1476698194036392019.png",
+          "game_tile_light": "quests/1476695876398350449/1476698143264477185.png",
+          "game_tile_dark": "quests/1476695876398350449/1476698143264477185.png",
+          "logotype_light": "quests/1476695876398350449/1476698176936480799.png",
+          "logotype_dark": "quests/1476695876398350449/1476698176936480799.png"
+        },
+        "colors": {
+          "primary": "#FFFFFF",
+          "secondary": "#000000"
+        },
+        "messages": {
+          "quest_name": "Lenovo Legion",
+          "game_title": "Lenovo Legion",
+          "game_publisher": "Lenovo Legion"
+        },
+        "task_config": {
+          "type": 1,
+          "join_operator": "or",
+          "tasks": {
+            "WATCH_VIDEO": {
+              "event_name": "WATCH_VIDEO",
+              "target": 28
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "event_name": "WATCH_VIDEO_ON_MOBILE",
+              "target": 28
+            }
+          }
+        },
+        "task_config_v2": {
+          "tasks": {
+            "WATCH_VIDEO": {
+              "type": "WATCH_VIDEO",
+              "target": 28,
+              "assets": {
+                "video": {
+                  "url": "quests/1476695876398350449/1477031820544446537_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1476695876398350449/1477031820544446537_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                },
+                "video_hls": {
+                  "url": "quests/1476695876398350449/1477031820544446537.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                }
+              },
+              "messages": {
+                "video_title": "Lenovo Legion Video"
+              }
+            },
+            "WATCH_VIDEO_ON_MOBILE": {
+              "type": "WATCH_VIDEO_ON_MOBILE",
+              "target": 28,
+              "assets": {
+                "video": {
+                  "url": "quests/1476695876398350449/1477031820544446537_1080.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                },
+                "video_low_res": {
+                  "url": "quests/1476695876398350449/1477031820544446537_720.mp4",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                },
+                "video_hls": {
+                  "url": "quests/1476695876398350449/1477031820544446537.m3u8",
+                  "width": 1920,
+                  "height": 1080,
+                  "thumbnail": "quests/1476695876398350449/1477103485496594554.png"
+                }
+              },
+              "messages": {
+                "video_title": "Lenovo Legion Video"
+              }
+            }
+          },
+          "join_operator": "or"
+        },
+        "rewards_config": {
+          "assignment_method": 1,
+          "rewards": [
+            {
+              "type": 4,
+              "sku_id": "1287881739531976815",
+              "messages": {
+                "name": "200 Orbs",
+                "name_with_article": "200 Orbs",
+                "redemption_instructions_by_platform": {
+                  "0": "PLACEHOLDER"
+                }
+              },
+              "orb_quantity": 200,
+              "premium_orb_quantity": 0
+            }
+          ],
+          "rewards_expire_at": "2026-04-13T00:00:12+00:00",
+          "platforms": [
+            0
+          ]
+        },
+        "share_policy": "shareable_everywhere",
+        "cta_config": {
+          "link": "https://www.lenovo.com/us/en/legion/",
+          "button_label": "En savoir plus",
+          "subtitle": "Reach Your Impossible"
+        }
+      },
+      "user_status": null,
+      "targeted_content": [],
+      "preview": false,
+      "traffic_metadata_raw": "EAI=",
+      "traffic_metadata_sealed": "eyJrZXlfZmluZ2VycHJpbnQiOiI4ZGUwNzVmMiIsInBheWxvYWQiOiJBWHdMd2dMR2ZLV2tYM0lOckxZaWdDL0JOSjArTzdyakdIZ1YrTUxFWHVjc1o0ST0ifQ=="
+    }
+  ],
+  "excluded_quests": [
+    {
+      "id": "1474437726668328960"
+    },
+    {
+      "id": "1469016962607878401"
+    },
+    {
+      "id": "1469025960815890432"
+    },
+    {
+      "id": "1466576187043348612"
+    },
+    {
+      "id": "1471628590096318597"
+    },
+    {
+      "id": "1476286335697555526"
+    },
+    {
+      "id": "1473790795248177355"
+    },
+    {
+      "id": "1467940930215743757"
+    },
+    {
+      "id": "1463568772538564628"
+    },
+    {
+      "id": "1476648302115291418"
+    },
+    {
+      "id": "1471215421297266778"
+    },
+    {
+      "id": "1473383175639007332"
+    },
+    {
+      "id": "1473407935970410724"
+    },
+    {
+      "id": "1468777737341763815"
+    },
+    {
+      "id": "1475549063108890664"
+    },
+    {
+      "id": "1471589719186870377"
+    },
+    {
+      "id": "1469018683555840299"
+    },
+    {
+      "id": "1465435141861277759"
+    }
+  ],
+  "quest_enrollment_blocked_until": null
+}
